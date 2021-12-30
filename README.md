@@ -5,7 +5,7 @@ is the state-of-the-art model for face recognition. It enhances the intra-class 
 ### Dataset Preparing
 The VGGface2 dataset is used. It contains 3,311,286 images and consists of 9,131 identities.
 1. Download dataset:&emsp;<a href="https://www.robots.ox.ac.uk/~vgg/data/vgg_face/">VGGFace2</a><br>
-2. Cropping only face and resize images to 112 x 112
+2. Crop only face and resize images to 112 x 112
 ### Training and Validation
 The validation dataset is randomly split 5% from all data by image_dataset_from_directory(). The training program can distribute training across multiple GPUs.
 ```
