@@ -6,7 +6,7 @@ bn_mom = 0.9
 class ArcFaceLayer(tf.keras.layers.Layer):
     # Input:  Embeddings, One-hot Labels
     # Output: Softmax of Logits
-    def __init__(self, output_dim, s=64., margin=0.5, arccos=False, easy_margin=False):
+    def __init__(self, output_dim, s=64., margin=0.5, arccos=False, easy_margin=False, **kwargs):
         assert s > 0.0, "Argument 's' must be greater than 0."
         assert margin >= 0.0, "Argument 'margin' must be greater than or equal to 0."
         assert margin < (math.pi / 2), "Argument 'margin' must be less than PI/2."
